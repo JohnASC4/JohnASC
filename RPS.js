@@ -7,7 +7,7 @@ if (playerChoice == compChoice){
 }
 //player picks rock and computer picks paper
 if (playerChoice == "r" && compChoice =='p'){
-    console.log('Rocke loses to paper. You lose!');
+    console.log('Rock loses to paper. You lose!');
 }
 //player picks rock and computer picks scissor
 if (playerChoice == 'r' && compChoice == 's'){
