@@ -11,3 +11,5 @@ var color = random(colors);  // select random word
   // prevent default
   return false;
 }
+
+//update
