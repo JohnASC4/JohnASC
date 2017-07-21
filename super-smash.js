@@ -22,3 +22,4 @@ console.log("You fought " + randArray(secondQuestion) +
             " in the " + randArray(mashArray) +
             " and hit them " + randArray(firstQuestion) + 
             " times. Too bad. Mewtwo wins!");
+            //projectupdate.
