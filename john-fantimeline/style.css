@@ -1,0 +1,32 @@
+
+body
+{
+
+ background-size: cover;
+ background-position: center;
+ text-align: center;
+ background-image: url(assets/mario.jpg);
+ /* opacity: 0.3; */
+ border: 5px dotted green;
+}
+
+#top
+{
+
+    color: blue;
+}
+
+p
+{
+width: 70%;
+text-align: center;
+
+}
+
+dd
+{
+padding: 15px;
+margin: 15px;
+border: 4px dotted blue;
+font-size: 200%;
+}
