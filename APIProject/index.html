@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>Welcome</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css" class="css">
+<link rel="stylesheet" href="app.js" class="js">
+</head>
+<body>
+    <h2>Nathan's and John's Pokedex</h2>
+    <form id=pokeform>
+  <!-- <input id=pokenumber placeholder="Number of the pokemon"/> -->
+  <input id="interactive" type="text" class="form-control" placeholder="pokemon/1/">
+  <button type=submit>Go!</button>
+</form>
+
+<!-- <h1 id=pokename></h1>
+<img id="pokeimage"/>
+<p class="text-justify"></p> -->
+<div class="row">
+    
+  <div class="col-md-12"> Name:</div>
+  <div class="col-md-12"> Type:</div>
+  <div class="col-md-12"> Height:</div>
+  <div class="col-md-12"> Weight:</div>
+
+</div>
+<img src= "http://pokeapi.co/api/v2/ability/34/">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="error-template">
+                <h1>
+                    Oops!</h1>
+                <h2>
+                   Pokeomon has not been found em-atm </h2>
+                <div class="error-details">
+                    Sorry, the Pokedex could not locate information on the pokemon.
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
