@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $.ajax({
-        url: 'https://swapi.co/api/people/?format=json' ,
+        url: 'https://swapi.co/api/?format=json' ,
         dataType: 'json',
         success: function(data) {
             console.log(data[0]);
