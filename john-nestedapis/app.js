@@ -21,7 +21,7 @@ $.ajax({
     success: function(data) {
         console.log(data[0].name);
         var country= data[0].name;
-        $('body').append(country);
+        $('body').append("Hi I'm from "+country+". Nice to meet you!");
   }
 })
 
