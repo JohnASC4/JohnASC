@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCTqlu6QTY9Z8Wpu6iCipimOfKou5wPYJ0",
+    authDomain: "highscore-game.firebaseapp.com",
+    databaseURL: "https://highscore-game.firebaseio.com",
+    projectId: "highscore-game",
+    storageBucket: "",
+    messagingSenderId: "374984911650"
+  };
+  firebase.initializeApp(config);
+</script>
+
+     
+</head>
+<body>
+  
+  <h1>High Scores</h1>
+  <input id="name" type="text" placeholder="enter name">
+  <input id="score" type="text" placeholder="enter score">
+  <input type="button" onclick="save()" value="Save">
+  
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css" class="css">
+</body>
+</html>
