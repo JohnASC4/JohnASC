@@ -1,10 +1,23 @@
 var database = firebase.database().ref();
 
-var myFBref = new Firebase("https://highscore-game.firebaseio.com");
+
 function save(){
-   var newScore = {};
-   newScore.name = document.getElementById("name").value;
-   newScore.score = document.getElementById("score").value;
-   myFBref.set(newScore);
+    var name = $('#name').val();
+    var score = $("#score").val();
+    console.log(name + " "+score);
+
+    var value={
+        NAME: name,
+        SCORE: score
+    }
+    database.push(value);
 }
+database.on("child_added",function(rowData){
+     var row = rowData.val();
+    var name = row.NAME;
+    var score = row.SCORE;
+    console.log(name+score);
+$('h4').empty();
+$('h4').append(name +" survived "+ score+" times!");
+})
 save();

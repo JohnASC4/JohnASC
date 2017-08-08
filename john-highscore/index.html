@@ -23,12 +23,65 @@
      
 </head>
 <body>
-  
-  <h1>High Scores</h1>
+   <header>
+    </header>
+    <aside>
+    </aside>
+    <div id="main">
+    <h1>Well, Do You Feel Lucky Punk?</h1>
+
+<h2 class="auto-style1">Well Do You?</h2>
+
+
+<script>
+
+ function myFunction1() {
+    var result = document.getElementById("pic");
+    var x = Math.floor(Math.random() * 5);
+    console.log(x);
+    if (x == 0) {
+      document.getElementById("Coin").innerHTML = "You're Dead Now, Mr. Lucky"
+
+result.innerHTML="<img alt=\"you're DEAD!\" src='\assets/headshot.jpg'/>";  }
+  else {
+      document.getElementById("Coin").innerHTML = "Seems you are lucky. Try again?";
+      result.innerHTML= "<img alt=\"you SURVIVED!!\" src='\assets/matrix.jpg'/>";
+    }
+    console.log(result)
+    console.log(Coin)
+    
+ }
+
+ myFunction1();
+</script>
+<script type="text/javascript">
+    var clicks = 0;
+    function onClick() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+      </script>
+
+<button type="button" onclick="myFunction1();onClick()" id="Coin">I'm Feeling Lucky :3</button>
+<p id="pic"> </p>
+</div>
+<footer>
+</footer>
+<p>Clicks: <a id="clicks">0</a></p>
+
+
+
+
+
+
+</div>
+<footer>
+</footer>
+  <h3>High Scores</h3>
   <input id="name" type="text" placeholder="enter name">
-  <input id="score" type="text" placeholder="enter score">
+  <input id="score" type="text" placeholder="times you survived">
   <input type="button" onclick="save()" value="Save">
-  
+  <h4> </h4>
     <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
