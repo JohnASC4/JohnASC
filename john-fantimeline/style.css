@@ -5,7 +5,7 @@ body
  background-size: cover;
  background-position: center;
  text-align: center;
- background-image: url(assets/mario.jpg);
+ 
  /* opacity: 0.3; */
  border: 5px dotted green;
 }
